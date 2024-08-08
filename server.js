@@ -11,6 +11,8 @@ mongoose.connect('mongodb://127.0.0.1/attempto');
 const TaskSchema = new mongoose.Schema({
     id: Number,
     name: String,
+    goal: Number,
+    color: String
 });
 
 const Task = mongoose.model('Task', TaskSchema);
